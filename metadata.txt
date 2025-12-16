@@ -1,0 +1,7 @@
+[general]
+name=Address Search Toolbar
+qgisMinimumVersion=3.28
+version=0.1.0
+author=Noriaki,Akahane
+email=akahane.noriaki@gmail.com
+description=住所フィールドを検索して選択するツールバー
