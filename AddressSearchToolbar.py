@@ -1,4 +1,8 @@
-from qgis.PyQt.QtWidgets import QLineEdit, QPushButton, QAction
+from qgis.PyQt.QtWidgets import QLineEdit, QPushButton
+try:  # Qt6 (QGIS 4): QAction は QtGui へ移動
+    from qgis.PyQt.QtGui import QAction
+except ImportError:  # Qt5 (QGIS 3)
+    from qgis.PyQt.QtWidgets import QAction
 from qgis.core import QgsExpression, QgsFeatureRequest
 print("### AddressSearchToolbar.py LOADED ###")
 class AddressSearchToolbar:
